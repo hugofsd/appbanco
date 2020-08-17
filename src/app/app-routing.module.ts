@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'pagar',
+    loadChildren: () => import('./pagar/pagar.module').then( m => m.PagarPageModule)
+  },
+  {
+    path: 'credito',
+    loadChildren: () => import('./credito/credito.module').then( m => m.CreditoPageModule)
+  },
+  {
+    path: 'transferencia',
+    loadChildren: () => import('./transferencia/transferencia.module').then( m => m.TransferenciaPageModule)
+  },
 ];
 
 @NgModule({

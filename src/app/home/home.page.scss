@@ -25,3 +25,27 @@
 #container a {
   text-decoration: none;
 }
+
+.welcome-card ion-img {
+  max-height: 35vh;
+  height: 10;
+  overflow: hidden;
+}
+
+
+:root {  
+  --ion-safe-area-top: 20px;  
+  --ion-safe-area-bottom: 22px;  
+}  
+.swiper-slide {  
+  display: block;  
+}  
+ion-slide > h2 {  
+  margin-top: 2.8rem;  
+}  
+ion-slide > img {  
+  height: 30vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}  

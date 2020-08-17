@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="secondary">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Pagar conta 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="dark">
+          <ion-card-header>
+            <ion-item-group>
+            <ion-card-subtitle>Saldo em conta corrente: </ion-card-subtitle>
+            <ion-card-title>R$ 600,55</ion-card-title>
+          </ion-item-group>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+  </ion-row>
+  </ion-grid>
+
+
+  
+
+<ion-item>
+    <ion-label position="floating">Digite o código de barras</ion-label>
+    <ion-input></ion-input>
+</ion-item>
+
+
+<ion-button expand="block" color="medium">PAGAR</ion-button>
+
+
+
+<ion-card color="dark">
+
+  <ion-card-header>
+    <ion-card-subtitle>Últimos pagamentos:</ion-card-subtitle>
+  </ion-card-header>
+
+<ion-item color="dark">
+  <ion-badge></ion-badge>
+  <ion-label>Pagamento: Cartão de crédito</ion-label>
+  <ion-badge color="success" slot="end">Pago</ion-badge>
+</ion-item>
+<ion-item color="dark">
+  <ion-badge></ion-badge>
+  <ion-label>Pagamento: Cartão de crédito</ion-label>
+  <ion-badge color="danger" slot="end">Cancelado</ion-badge>
+</ion-item>
+<ion-item color="dark">
+  <ion-badge></ion-badge>
+  <ion-label>Pagamento: Netflix</ion-label>
+  <ion-badge color="primary" slot="end">Agendado</ion-badge>
+</ion-item>
+<ion-item color="dark">
+  <ion-badge></ion-badge>
+  <ion-label>Pagamento: Vivo </ion-label>
+  <ion-badge color="success" slot="end">Pago</ion-badge>
+</ion-item>
+
+<ion-button expand="block" color="Secondary" > VER HISTÓRICO <br><ion-icon name="eye-outline"></ion-icon> </ion-button>
+</ion-card>
+
+
+<ion-fab vertical="top" horizontal="end" edge slot="fixed">
+  <ion-fab-button color="dark"> 
+    <ion-icon name="menu-outline"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="bottom" color="dark">
+    <ion-fab-button routerLink="/transferencia" color="medium"><ion-icon name="repeat"></ion-icon></ion-fab-button>
+    <ion-fab-button routerLink="/credito" color="medium" ><ion-icon name="card"></ion-icon></ion-fab-button>
+    <ion-fab-button routerLink="/investimento" color="medium"><ion-icon name="globe"></ion-icon></ion-fab-button>
+    <ion-fab-button routerLink="/home" color="medium"><ion-icon name="home-outline"></ion-icon></ion-fab-button> 
+  </ion-fab-list>
+  
+</ion-fab>
+
+
+
+</ion-content>
